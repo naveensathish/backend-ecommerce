@@ -21,6 +21,9 @@ public class User {
     @Column(name = "password", nullable = false) // Map 'password' field to database column
     private String password;
     
+    @Column(name = "lock_status", nullable = false) // Map 'password' field to database column
+    private String lock_status;
+    
     @Column(name = "name", nullable = true) // Map 'name' field to database column
     private String name;
 
@@ -54,13 +57,21 @@ public class User {
 		this.password = password;
 	}
 
+	public String getLock_status() {
+		return lock_status;
+	}
+
+	public void setLock_status(String lock_status) {
+		this.lock_status = lock_status;
+	}
+
 	public String getName() {
 		return name;
 	}
 
-//	public void setName(String name) {
-//		this.name = name;
-//	}
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getAddress() {
 		return address;
