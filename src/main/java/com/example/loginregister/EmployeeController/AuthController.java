@@ -17,14 +17,20 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody User user) {
-    	User registeredUser = authService.registerUser(user); 
-    	return ResponseEntity.ok(registeredUser);
-//        return ResponseEntity.ok(authService.registerUser(user));
+//    	User registeredUser = authService.registerUser(user); 
+//    	return ResponseEntity.ok(registeredUser);
+        return ResponseEntity.ok(authService.registerUser(user));
     }
 
     @PostMapping("/login")
     public ResponseEntity<User> login(@RequestBody User user) {
         User authenticatedUser = authService.authenticateUser(user.getEmail(), user.getPassword());
+        System.out.println(user.toString());
+        String em= user.getEmail();
+        String pass = user. getPassword();
+        System.out.println("login id  :"+em+"password:  "+pass);
+        System.out.println(authenticatedUser);
+        
         if (authenticatedUser != null) {
             return ResponseEntity.ok(authenticatedUser);
         }
