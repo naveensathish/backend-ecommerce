@@ -18,9 +18,10 @@ public class AuthServiceImpl implements AuthService {
     private UserRepository userRepository;
     
     @Override
-    public boolean emailExists(String email) {
+    public boolean emailExists(String email) { 
         // Check if the email already exists in the database
-        return userRepository.findByEmail(email) != null;
+    	// Check if the email already exists in the database
+        return userRepository.findByEmail(email) != null; 
     }
 
     @Override
