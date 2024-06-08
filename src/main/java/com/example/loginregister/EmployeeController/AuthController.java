@@ -9,19 +9,20 @@ import com.example.loginregister.Service.AuthService;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AuthController {
     
     @Autowired
     private AuthService authService;
 
     @PostMapping("/register")
-    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<User> register(@RequestBody User user) {
-        return ResponseEntity.ok(authService.registerUser(user));
+    	User registeredUser = authService.registerUser(user); 
+    	return ResponseEntity.ok(registeredUser);
+//        return ResponseEntity.ok(authService.registerUser(user));
     }
 
     @PostMapping("/login")
-    @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<User> login(@RequestBody User user) {
         User authenticatedUser = authService.authenticateUser(user.getEmail(), user.getPassword());
         if (authenticatedUser != null) {
@@ -29,7 +30,14 @@ public class AuthController {
         }
         return ResponseEntity.status(401).build();
     }
+    
+    @GetMapping("/check-email/{email}")
+    public ResponseEntity<Boolean> checkEmailExists(@PathVariable String email) {
+        boolean exists = authService.emailExists(email);
+        return ResponseEntity.ok(exists);
+    }
 }
+
 
 
 

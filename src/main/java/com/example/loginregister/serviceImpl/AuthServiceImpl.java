@@ -1,8 +1,10 @@
 package com.example.loginregister.serviceImpl;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
 import com.example.loginregister.Entity.User;
 import com.example.loginregister.Repo.UserRepository;
 import com.example.loginregister.Service.AuthService;
@@ -10,12 +12,11 @@ import com.example.loginregister.Service.AuthService;
 @Service
 public class AuthServiceImpl implements AuthService {
 
+    private static final Logger logger = LoggerFactory.getLogger(AuthServiceImpl.class);
+
     @Autowired
     private UserRepository userRepository;
     
-    @Autowired
-    private PasswordEncoder passwordEncoder; // Autowire the PasswordEncoder bean
-
     @Override
     public boolean emailExists(String email) {
         // Check if the email already exists in the database
@@ -24,22 +25,17 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public User registerUser(User user) {
-        // Check if the email already exists
-        if (emailExists(user.getEmail())) {
-            // Email already exists, return an appropriate error response
-            throw new IllegalArgumentException("User with this email already exists.");
-        }
-        // Email is unique, proceed with user registration
-        user.setPassword(passwordEncoder.encode(user.getPassword())); // Encrypt the password
-        return userRepository.save(user);
+        // Proceed with user registration
+    	User savedUser = userRepository.save(user);
+        logger.info("User registered successfully: {}", savedUser.getEmail());
+        return savedUser;
     }
+
 
     @Override
     public User authenticateUser(String email, String password) {
         User user = userRepository.findByEmail(email);
-        if (user != null && passwordEncoder.matches(password, user.getPassword())) {
-            return user;
-        }
+        // Implement authentication logic here
         return null;
     }
 }
