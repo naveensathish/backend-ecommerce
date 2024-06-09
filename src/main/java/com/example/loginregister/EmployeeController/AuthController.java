@@ -24,11 +24,13 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<User> login(@RequestBody User user) {
-        User authenticatedUser = authService.authenticateUser(user.getEmail(), user.getPassword());
+        User authenticatedUser = authService.authenticateUser(user.getEmail(), user.getPassword(),user.getName());
 //        System.out.println(user.email);
         String em= user.getEmail();
         String pass = user. getPassword();
-        System.out.println("login id  :"+em+"password:  "+pass);
+        
+        String nameee = authenticatedUser.getName();
+        System.out.println("login id  :"+em+"password:"+pass+" "+"name: "+ nameee);
         System.out.println(authenticatedUser);
         
         if (authenticatedUser != null) {

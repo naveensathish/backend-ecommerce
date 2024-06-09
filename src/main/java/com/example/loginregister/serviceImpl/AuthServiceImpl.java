@@ -39,7 +39,7 @@ public class AuthServiceImpl implements AuthService {
 
 
     @Override 
-    public User authenticateUser(String email, String password) {
+    public User authenticateUser(String email, String password, String name) {
         User user = userRepository.findByEmail(email);
         if (user != null && user.getPassword().equals(password)) {
         	

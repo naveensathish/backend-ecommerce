@@ -7,6 +7,6 @@ import com.example.loginregister.Entity.User;
 	
 public interface AuthService {
     User registerUser(User user);
-    User authenticateUser(String email, String password);
+    User authenticateUser(String email, String password, String name);
     boolean emailExists(String email);
 }
