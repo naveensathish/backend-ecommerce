@@ -50,3 +50,6 @@ This **Proprietary License Agreement** ("Agreement") is a legal agreement betwee
 
 10. **Indemnity**
    - You agree to indemnify and hold harmless Naveen S, its affiliates, officers, employees, and agents from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to your use of the Software in violation of this Agreement.
+
+11. **Severe Consequences for Violations**
+   - Violation of this Agreement may result in severe legal consequences, including criminal prosecution or civil liability under applicable laws. If you breach the terms of this Agreement or engage in unauthorized use or distribution of the Software, you may be subject to legal action and liable for damages, including punitive and compensatory damages, as well as statutory fines under government laws.
