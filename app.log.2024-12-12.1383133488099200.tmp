@@ -1,0 +1,245 @@
+2024-12-12T23:59:22.391+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:22.438+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:22.438+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:22.443+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:22.457+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:22.458+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:22.461+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:22.461+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:22.469+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:33.313+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/cancel/1120241212111111760284a5
+2024-12-12T23:59:33.319+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing PUT /api/cart/cancel/1120241212111111760284a5
+2024-12-12T23:59:33.320+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:33.323+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:33.337+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:33.337+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured PUT /api/cart/cancel/1120241212111111760284a5
+2024-12-12T23:59:33.339+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] c.e.l.controller.AuthController          : Received request to cancel order with orderId: 1120241212111111760284a5
+2024-12-12T23:59:33.379+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] c.e.l.controller.AuthController          : Successfully cancelled the order with orderId: 1120241212111111760284a5
+2024-12-12T23:59:34.750+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:34.754+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:34.755+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:34.756+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:34.765+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:34.766+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:34.767+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:34.767+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:34.770+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:37.113+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.114+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:37.117+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:37.133+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:37.134+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.136+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:37.136+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:37.145+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:37.156+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.157+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:37.161+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:37.181+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:37.182+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.185+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:37.185+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:37.193+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:37.225+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.226+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:37.230+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:37.255+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:37.256+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.258+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:37.258+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:37.267+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-1] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:37.308+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.309+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:37.317+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:37.329+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:37.329+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:37.331+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:37.332+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:37.340+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:39.902+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.907+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.908+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.908+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.916+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.920+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:39.929+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:39.974+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:39.975+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.976+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:39.977+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:39.988+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:39.995+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:39.997+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:40.012+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:40.038+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:40.039+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:40.043+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:40.043+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:40.050+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:40.098+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:40.100+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:40.102+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:40.118+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:40.119+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:40.121+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:40.121+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:40.127+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:40.137+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:40.139+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:40.142+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:40.157+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:40.158+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:40.160+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:40.160+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:40.164+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:55.600+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/cancel/11202412123738397462eb7f
+2024-12-12T23:59:55.604+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing PUT /api/cart/cancel/11202412123738397462eb7f
+2024-12-12T23:59:55.605+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:55.607+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:55.613+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:55.613+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured PUT /api/cart/cancel/11202412123738397462eb7f
+2024-12-12T23:59:55.614+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] c.e.l.controller.AuthController          : Received request to cancel order with orderId: 11202412123738397462eb7f
+2024-12-12T23:59:55.635+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-9] c.e.l.controller.AuthController          : Successfully cancelled the order with orderId: 11202412123738397462eb7f
+2024-12-12T23:59:56.979+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:56.982+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:56.983+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:56.988+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:56.995+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:56.997+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:56.998+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:56.998+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:57.003+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-5] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:58.711+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.712+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:58.713+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:58.724+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:58.724+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.726+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:58.727+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:58.733+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-10] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:58.744+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.746+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:58.751+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:58.760+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:58.760+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.762+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:58.762+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:58.767+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-6] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:58.774+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.775+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:58.778+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:58.801+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:58.802+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.805+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:58.805+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:58.810+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-8] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11
+2024-12-12T23:59:58.821+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.822+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwic3ViIjoiaGVoZWUiLCJpYXQiOjE3MzQwMjgxMTYsImV4cCI6MTczNDA2NDExNn0.P1eR13WiJ9wrV7gXp1v6026YMQ_pWBOyjoxysmDbYRk
+2024-12-12T23:59:58.825+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+Extracted Username: hehee
+2024-12-12T23:59:58.835+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.security.JwtRequestFilter          : 
+
+User hehee authenticated successfully
+2024-12-12T23:59:58.835+05:30 DEBUG 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/cart/fetchordersincart/11?email=hehee%40gmail.com
+2024-12-12T23:59:58.837+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Received request to fetch order items for userId: 11
+2024-12-12T23:59:58.837+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Email received: hehee@gmail.com
+2024-12-12T23:59:58.842+05:30  INFO 32736 --- [loginregister] [http-nio-0.0.0.0-8080-exec-2] c.e.l.controller.AuthController          : Successfully fetched 6 order items for userId: 11

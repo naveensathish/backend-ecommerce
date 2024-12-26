@@ -1,0 +1,12 @@
+# Application properties
+spring:
+  application:
+    name: loginregister
+
+# Server configuration
+server:
+  port: 8080 # Change the port if needed
+
+# JWT Configuration
+jwt:
+  secret: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJlbG9uIiwiaWF0IjoxNzI5ODczMTg1LCJleHAiOjE3Mjk5MDkxODV9.wIdQs3ZTm-sRXGFea_i0ObHW5c2N53uEOvxxBtNDzgI

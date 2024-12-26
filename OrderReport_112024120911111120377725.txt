@@ -1,0 +1,15 @@
+Order Report for Order ID: 112024120911111120377725
+
+Order ID: 112024120911111120377725
+User ID: 11
+Product ID: 2
+Product Name: Xbox Series X/S
+Quantity: 1
+Total Amount: 6798.0
+Status: Pending
+Shipping Address: 1st Street, Las Vegas
+Phone Number: +911525585158
+Order Date: 2024-12-09 15:38:49
+
+----------------------------
+
