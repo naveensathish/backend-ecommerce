@@ -98,23 +98,6 @@ public class KafkaOrderConsumerService {
 		return LocalDateTime.of(now.toLocalDate(), LocalTime.of(cycleEndHour, cycleEndMinute, 0));
 	}
 	
-//	private LocalDateTime getEndOfCurrentCycle(LocalDateTime now) {
-//	    int totalMinutes = now.getHour() * 60 + now.getMinute(); 
-//	    int nextCycleEnd = (int) Math.ceil(totalMinutes / 15.0) * 15;
-//
-//	    int cycleEndHour = nextCycleEnd / 60;
-//	    int cycleEndMinute = nextCycleEnd % 60;
-//
-//	    // Check if the calculated hour is 24, reset to 0 and adjust the date 
-//	    if (cycleEndHour == 24) {
-//	        cycleEndHour = 0;
-//	        now = now.plusDays(1);  // Move to the next day
-//	    }
-//
-//	    return LocalDateTime.of(now.toLocalDate(), LocalTime.of(cycleEndHour, cycleEndMinute, 0)); 
-//	}
-
-
 	private LocalDateTime getStartOfCurrentCycle(LocalDateTime cycleEndTime) {
 		return cycleEndTime.minusMinutes(15);
 	}
